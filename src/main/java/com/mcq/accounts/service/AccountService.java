@@ -1,6 +1,6 @@
 package com.mcq.accounts.service;
 
-import com.mcq.accounts.constants.AccountConstants;
+import com.mcq.accounts.util.constants.AccountConstants;
 import com.mcq.accounts.dto.CustomerDTO;
 import com.mcq.accounts.entity.Account;
 import com.mcq.accounts.entity.Customer;
@@ -12,10 +12,7 @@ import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
-import java.util.Random;
-import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Service
@@ -33,9 +30,11 @@ public class AccountService {
         }
 
         Customer customer = CustomerMapper.mapToCustomer(customerDTO, new Customer());
+        customer.setCreatedBy("ANON");
         Customer savedCustomer = customerRepository.save(customer);
 
         Account newAccount = buildNewAccount(savedCustomer);
+        newAccount.setCreatedBy("ANON");
         accountRepository.save(newAccount);
     }
 

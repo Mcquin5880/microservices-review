@@ -1,4 +1,4 @@
-package com.mcq.accounts.constants;
+package com.mcq.accounts.util.constants;
 
 public class AccountConstants {
 

@@ -1,6 +1,6 @@
 package com.mcq.accounts.controller;
 
-import com.mcq.accounts.constants.AccountConstants;
+import com.mcq.accounts.util.constants.AccountConstants;
 import com.mcq.accounts.dto.CustomerDTO;
 import com.mcq.accounts.dto.ResponseDTO;
 import com.mcq.accounts.service.AccountService;
