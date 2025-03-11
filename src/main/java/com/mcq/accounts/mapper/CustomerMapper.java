@@ -5,7 +5,7 @@ import com.mcq.accounts.entity.Customer;
 
 public class CustomerMapper {
 
-    public static CustomerDTO mapToCustomerDto(Customer customer, CustomerDTO customerDto) {
+    public static CustomerDTO mapToCustomerDTO(Customer customer, CustomerDTO customerDto) {
         customerDto.setName(customer.getName());
         customerDto.setEmail(customer.getEmail());
         customerDto.setMobileNumber(customer.getMobileNumber());
