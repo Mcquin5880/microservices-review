@@ -39,7 +39,7 @@ public class LoanService {
         return newLoan;
     }
 
-    public LoanDto fetchLoan(String mobileNumber) {
+    public LoanDto getLoan(String mobileNumber) {
         Loan loans = loanRepository.findByMobileNumber(mobileNumber).orElseThrow(
                 () -> new ResourceNotFoundException("Loan", "mobileNumber", mobileNumber)
         );

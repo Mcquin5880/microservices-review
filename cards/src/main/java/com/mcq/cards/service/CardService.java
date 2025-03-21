@@ -39,7 +39,7 @@ public class CardService {
         return newCard;
     }
 
-    public CardDto fetchCard(String mobileNumber) {
+    public CardDto getCard(String mobileNumber) {
         Card cards = cardsRepository.findByMobileNumber(mobileNumber).orElseThrow(
                 () -> new ResourceNotFoundException("Card", "mobileNumber", mobileNumber)
         );

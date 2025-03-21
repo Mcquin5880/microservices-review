@@ -32,15 +32,15 @@ public class LoanController {
     }
 
     @GetMapping
-    public ResponseEntity<LoanDto> fetchLoanDetails(@RequestParam
+    public ResponseEntity<LoanDto> getLoan(@RequestParam
                                                      @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits")
                                                      String mobileNumber) {
-        LoanDto loanDto = loanService.fetchLoan(mobileNumber);
+        LoanDto loanDto = loanService.getLoan(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(loanDto);
     }
 
     @PutMapping
-    public ResponseEntity<ResponseDto> updateLoanDetails(@Valid @RequestBody LoanDto loansDto) {
+    public ResponseEntity<ResponseDto> updateLoan(@Valid @RequestBody LoanDto loansDto) {
         boolean isUpdated = loanService.updateLoan(loansDto);
         if (isUpdated) {
             return ResponseEntity
@@ -54,7 +54,7 @@ public class LoanController {
     }
 
     @DeleteMapping
-    public ResponseEntity<ResponseDto> deleteLoanDetails(@RequestParam
+    public ResponseEntity<ResponseDto> deleteLoan(@RequestParam
                                                          @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits")
                                                          String mobileNumber) {
         boolean isDeleted = loanService.deleteLoan(mobileNumber);

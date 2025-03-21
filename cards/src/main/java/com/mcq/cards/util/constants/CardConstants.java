@@ -2,9 +2,7 @@ package com.mcq.cards.util.constants;
 
 public final class CardConstants {
 
-    private CardConstants() {
-        // restrict instantiation
-    }
+    private CardConstants() {}
 
     public static final String  CREDIT_CARD = "Credit Card";
     public static final int  NEW_CARD_LIMIT = 1_00_000;
