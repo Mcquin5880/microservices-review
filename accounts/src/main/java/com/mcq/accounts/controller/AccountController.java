@@ -29,10 +29,10 @@ public class AccountController {
     }
 
     @GetMapping
-    public ResponseEntity<CustomerDto> getAccountDetails(
+    public ResponseEntity<CustomerDto> getAccount(
             @RequestParam @Pattern(regexp = "($|[0-9]{10})", message = "Mobile number must be 10 digits") String mobileNumber) {
 
-        CustomerDto customerDTO = accountService.fetchAccount(mobileNumber);
+        CustomerDto customerDTO = accountService.getAccount(mobileNumber);
         return ResponseEntity.ok(customerDTO);
     }
 

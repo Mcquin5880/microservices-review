@@ -37,7 +37,7 @@ public class AccountService {
         accountRepository.save(newAccount);
     }
 
-    public CustomerDto fetchAccount(String mobileNumber) {
+    public CustomerDto getAccount(String mobileNumber) {
         Customer customer = customerRepository.findByMobileNumber(mobileNumber)
                 .orElseThrow(() -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber));
 
@@ -45,7 +45,7 @@ public class AccountService {
                 .orElseThrow(() -> new ResourceNotFoundException("Account", "customerId", customer.getCustomerId().toString()));
 
         CustomerDto customerDTO = CustomerMapper.mapToCustomerDTO(customer, new CustomerDto());
-        customerDTO.setAccountDTO(AccountMapper.mapToAccountDTO(account, new AccountDto()));
+        customerDTO.setAccountDTO(AccountMapper.mapToAccountDto(account, new AccountDto()));
         return customerDTO;
     }
 
