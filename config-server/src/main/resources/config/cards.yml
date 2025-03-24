@@ -1,0 +1,17 @@
+cards:
+  message: "Welcome to Shady Card Services - Swipe away!"
+  contactDetails:
+    name: "Slick Rick - VP of Card Shenanigans"
+    email: "rick@shadycards.com"
+  onCallSupport:
+    - "(111) 222-3333"
+    - "(444) 555-6666"
+  creditLimitPolicy: "Unlimited... if you can pay it back."
+  interestRates:
+    regular: 24.99
+    latePayment: 34.99
+    cashAdvance: 29.99
+  perks:
+    - "1% Cashback (on Tuesdays only)"
+    - "Free Airport Lounge Access (if you can find it)"
+    - "Exclusive NFT membership (terms apply)"

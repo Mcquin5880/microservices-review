@@ -1,0 +1,14 @@
+accounts:
+  message: "Welcome to Shady Bank - Trust us, we swear!"
+  contactDetails:
+    name: "Tony Baloney - Chief Financial Mischief Officer"
+    email: "tony@shadybank.com"
+  onCallSupport:
+    - "(123) 456-7890"
+    - "(987) 654-3210"
+  accountTypes:
+    - "Savings"
+    - "Checking"
+    - "Offshore (Shhh...)"
+    - "Crypto - Powered by DogeCoin™"
+  overdraftPolicy: "Don't worry, we'll just 'borrow' from your next paycheck."

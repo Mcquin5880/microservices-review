@@ -1,0 +1,14 @@
+loans:
+  message: "Welcome to Real Loans - No Escaping This!"
+  contactDetails:
+    name: "Big Tony - Head of Loan Collections"
+    email: "bigtony@shadyloans.com"
+  onCallSupport:
+    - "(111) 222-3333"
+    - "(888) 999-0000"
+  loanTypes:
+    - "Personal Loan"
+    - "Business Loan"
+    - "Home Equity"
+  paymentGracePeriod: "2 days — no exceptions."
+  defaultPenalty: "15% + some 'personal visits'"

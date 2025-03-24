@@ -1,0 +1,17 @@
+cards:
+  message: "Welcome to Real Cards - The Swiping is Real!"
+  contactDetails:
+    name: "Lisa Credit - Head of Card Operations"
+    email: "lisa@shadycards.com"
+  onCallSupport:
+    - "(999) 111-2222"
+    - "(555) 666-7777"
+  creditLimitPolicy: "You'll pay... eventually."
+  interestRates:
+    regular: 19.99
+    latePayment: 29.99
+    cashAdvance: 24.99
+  perks:
+    - "1% Cashback on actual money"
+    - "Lounge Access (includes free peanuts)"
+    - "Premium NFT Access (non-refundable)"

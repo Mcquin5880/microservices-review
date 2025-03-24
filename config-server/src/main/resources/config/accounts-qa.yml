@@ -1,0 +1,13 @@
+accounts:
+  message: "Welcome to Shady Bank QA - For Testing Only!"
+  contactDetails:
+    name: "Sammy QA - Quality Assassin"
+    email: "sammy@shadybank.com"
+  onCallSupport:
+    - "(444) 555-6666"
+    - "(222) 333-4444"
+  accountTypes:
+    - "Savings"
+    - "Test Account"
+    - "QA Crypto - Backed by Monopoly money"
+  overdraftPolicy: "We'll just 'forget' to notify you."

@@ -1,0 +1,17 @@
+cards:
+  message: "Welcome to QA Cards - Test All The Swipes!"
+  contactDetails:
+    name: "Tester Tom - QA Swiper"
+    email: "tom@shadycards.com"
+  onCallSupport:
+    - "(777) 888-9999"
+    - "(333) 444-5555"
+  creditLimitPolicy: "We’ll let you swipe... but QA will catch you."
+  interestRates:
+    regular: 10.99
+    latePayment: 15.99
+    cashAdvance: 20.99
+  perks:
+    - "Testing Cashback (Fake money)"
+    - "Mock Lounge Access"
+    - "Test NFT Access (Expires in 2 hours)"

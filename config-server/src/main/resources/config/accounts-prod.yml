@@ -1,0 +1,14 @@
+accounts:
+  message: "Welcome to Shady Bank PRODUCTION - Now We're Serious!"
+  contactDetails:
+    name: "Richie Rich - CFO"
+    email: "richie@shadybank.com"
+  onCallSupport:
+    - "(999) 888-7777"
+    - "(111) 222-3333"
+  accountTypes:
+    - "Savings"
+    - "Checking"
+    - "Offshore (Totally legal)"
+    - "Crypto - Backed by Bitcoin™"
+  overdraftPolicy: "You'll owe us forever, but hey — no pressure."

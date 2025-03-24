@@ -1,0 +1,15 @@
+loans:
+  message: "Welcome to Shady Loans - We’ll find you if you don’t pay!"
+  contactDetails:
+    name: "Louie Lenderman - Head of Collections"
+    email: "louie@shadyloans.com"
+  onCallSupport:
+    - "(666) 777-8888"
+    - "(999) 000-1111"
+  loanTypes:
+    - "Personal"
+    - "Business"
+    - "Home Equity (Includes your soul)"
+    - "Car (Only slightly used)"
+  paymentGracePeriod: "5 days — after that, good luck."
+  defaultPenalty: "15% + your kneecaps"

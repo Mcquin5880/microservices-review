@@ -1,5 +1,6 @@
 package com.mcq.loans.controller;
 
+import com.mcq.loans.config.LoansConfigInfoDto;
 import com.mcq.loans.dto.LoanDto;
 import com.mcq.loans.dto.ResponseDto;
 import com.mcq.loans.service.LoanService;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 public class LoanController {
 
     private final LoanService loanService;
+    private final LoansConfigInfoDto loansConfigInfoDto;
 
     @PostMapping
     public ResponseEntity<ResponseDto> createLoan(@RequestParam
@@ -67,6 +69,11 @@ public class LoanController {
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(LoanConstants.STATUS_417, LoanConstants.MESSAGE_417_DELETE));
         }
+    }
+
+    @GetMapping("/config-info")
+    public ResponseEntity<LoansConfigInfoDto> getLoansConfigInfo() {
+        return ResponseEntity.ok(loansConfigInfoDto);
     }
 
 }

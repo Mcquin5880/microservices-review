@@ -1,0 +1,14 @@
+loans:
+  message: "Welcome to QA Loans - Just for Testing!"
+  contactDetails:
+    name: "Larry Tester - QA Loan Approver"
+    email: "larry@shadyloans.com"
+  onCallSupport:
+    - "(444) 555-1234"
+    - "(666) 777-4321"
+  loanTypes:
+    - "Test Loan"
+    - "Mock Home Equity"
+    - "Business Loan (Monopoly money)"
+  paymentGracePeriod: "3 days — you’ll be fine, probably."
+  defaultPenalty: "Mock Penalty (Kneecaps intact)"
